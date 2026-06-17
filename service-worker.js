@@ -1,7 +1,7 @@
 // CACHE_NAME's suffix is rewritten by scripts/build_pwa.py on every build, which
 // forces iOS Safari to notice the file changed and re-fetch (it ignores byte-identical
 // service worker updates).
-const CACHE_NAME = 'events-pwa-20260616230945';
+const CACHE_NAME = 'events-pwa-20260616231738';
 
 const APP_SHELL = [
   './',
