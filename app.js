@@ -157,7 +157,7 @@ function browseShellHtml() {
     : null;
   return `
     <header class="app-header">
-      <h1>🌃 Date Night</h1>
+      <h1>🌃 Date Night NYC</h1>
       ${updated ? `<p class="muted small">Data current as of ${updated}</p>` : ''}
     </header>
     <div class="controls">
