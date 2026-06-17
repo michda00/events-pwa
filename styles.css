@@ -1,0 +1,144 @@
+:root {
+  --plum: #5C2D5E;
+  --charcoal: #2C2C2C;
+  --muted: #888888;
+  --link: #6B3FA0;
+  --blush: #F7E9EC;
+  --card-bg: #FFFFFF;
+  --border: #E6D3D8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--blush);
+  color: var(--charcoal);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 16px 32px;
+}
+
+.app-header {
+  padding-top: max(8px, env(safe-area-inset-top));
+  margin-bottom: 12px;
+}
+
+.app-header h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  color: var(--plum);
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+input, select {
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--charcoal);
+  width: 100%;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  margin: 10px 0;
+}
+
+.card-title {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.btn-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.btn {
+  flex: 1;
+  font-size: 1rem;
+  padding: 8px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--charcoal);
+}
+
+.btn:disabled { opacity: 0.4; }
+
+.btn-active {
+  background: var(--plum);
+  color: white;
+  border-color: var(--plum);
+}
+
+.btn-block {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--link);
+  font-size: 1rem;
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.link {
+  display: inline-block;
+  color: var(--link);
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.section-heading {
+  font-size: 1.05rem;
+  color: var(--plum);
+  margin: 18px 0 6px;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 14px 0 4px;
+}
+
+.restaurant-card { padding: 0; overflow: hidden; }
+.restaurant-photo { width: 100%; height: 160px; object-fit: cover; display: block; }
+.restaurant-card .card-info { padding: 14px; }
+
+.empty-state {
+  text-align: center;
+  color: var(--muted);
+  padding: 24px 8px;
+}
